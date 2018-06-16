@@ -32,7 +32,7 @@ namespace SAFE.Negocio
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: {0}", ex.Message);
+                System.Diagnostics.Debug.WriteLine("Error: {0}", ex.Message);
                 return false;
             }
         }
@@ -65,7 +65,7 @@ namespace SAFE.Negocio
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error Remove: {0}", ex.Message);
+                System.Diagnostics.Debug.WriteLine("Error Remove: {0}", ex.Message);
                 return false;
             }
         }
@@ -81,7 +81,7 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.SqlQuery<SSF_ESTADOCAPAEMPRESA>(
             "BEGIN pkg_ssfEstadocapaempresa.sp_getAll(:o_glosa, :o_data); end;",
             param1, param2).ToList();
-            Console.WriteLine("o_glosa: {0}", param1.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param1.Value);
             return resultado.ToList();
 
         }
@@ -100,9 +100,9 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfEstadocapaempresa.sp_add(:p_estadocapaemp, :p_descripcion, :o_glosa, :o_estado, :o_id); end;",
             param1, param2, param3, param4, param5);
-            Console.WriteLine("o_glosa: {0}", param3.Value);
-            Console.WriteLine("o_estado: {0}", param4.Value);
-            Console.WriteLine("o_id: {0}", param5.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param3.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param4.Value);
+            System.Diagnostics.Debug.WriteLine("o_id: {0}", param5.Value);
 
             if (param3.Value.ToString().ToLower().Contains("xito"))
             {
@@ -128,8 +128,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfEstadocapaempresa.sp_update(:p_id, :p_estadocapaemp, :p_descripcion, :o_glosa, :o_estado); end;",
             param1, param2, param3, param4, param5);
-            Console.WriteLine("o_glosa: {0}", param4.Value);
-            Console.WriteLine("o_estado: {0}", param5.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param4.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param5.Value);
 
             if (param4.Value.ToString().ToLower().Contains("xito"))
             {
@@ -150,7 +150,7 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfEstadocapaempresa.sp_delete(:p_id, :o_glosa); end;",
             param1, param2);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
 
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
@@ -173,8 +173,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfEstadocapaempresa.sp_activar(:p_id, :o_glosa, :o_estado); end;",
             param1, param2, param3);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
-            Console.WriteLine("o_estado: {0}", param3.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param3.Value);
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
             {
@@ -196,8 +196,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfEstadocapaempresa.sp_desactivar(:p_id, :o_glosa, :o_estado); end;",
             param1, param2, param3);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
-            Console.WriteLine("o_estado: {0}", param3.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param3.Value);
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
             {

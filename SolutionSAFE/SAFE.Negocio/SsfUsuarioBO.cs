@@ -32,7 +32,7 @@ namespace SAFE.Negocio
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: {0}", ex.Message);
+                System.Diagnostics.Debug.WriteLine("Error: {0}", ex.Message);
                 return false;
             }
         }
@@ -68,7 +68,7 @@ namespace SAFE.Negocio
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error Remove: {0}", ex.Message);
+                System.Diagnostics.Debug.WriteLine("Error Remove: {0}", ex.Message);
                 return false;
             }
         }
@@ -84,7 +84,7 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.SqlQuery<SSF_USUARIO>(
             "BEGIN pkg_ssfUsuario.sp_getAll(:o_glosa, :o_data); end;",
             param1, param2).ToList();
-            Console.WriteLine("o_glosa: {0}", param1.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param1.Value);
             return resultado.ToList();
 
         }
@@ -106,9 +106,9 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfUsuario.sp_add(:p_username, :p_contrasena, :p_persona, :p_perfil, :p_empresa, :o_glosa, :o_estado, :o_id); end;",
             param1, param2, param3, param4, param5, param6, param7, param8);
-            Console.WriteLine("o_glosa: {0}", param6.Value);
-            Console.WriteLine("o_estado: {0}", param7.Value);
-            Console.WriteLine("o_id: {0}", param8.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param6.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param7.Value);
+            System.Diagnostics.Debug.WriteLine("o_id: {0}", param8.Value);
 
             if (param6.Value.ToString().ToLower().Contains("xito"))
             {
@@ -137,8 +137,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfUsuario.sp_update(:p_id, :p_username, :p_contrasena, :p_persona, :p_perfil, :p_empresa, :o_glosa, :o_estado); end;",
             param1, param2, param3, param4, param5, param6, param7, param8);
-            Console.WriteLine("o_glosa: {0}", param7.Value);
-            Console.WriteLine("o_estado: {0}", param8.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param7.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param8.Value);
 
             if (param7.Value.ToString().ToLower().Contains("xito"))
             {
@@ -159,7 +159,7 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfUsuario.sp_delete(:p_id, :o_glosa); end;",
             param1, param2);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
 
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
@@ -182,8 +182,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfUsuario.sp_activar(:p_id, :o_glosa, :o_estado); end;",
             param1, param2, param3);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
-            Console.WriteLine("o_estado: {0}", param3.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param3.Value);
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
             {
@@ -205,8 +205,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfUsuario.sp_desactivar(:p_id, :o_glosa, :o_estado); end;",
             param1, param2, param3);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
-            Console.WriteLine("o_estado: {0}", param3.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param3.Value);
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
             {
@@ -217,5 +217,34 @@ namespace SAFE.Negocio
                 return false;
             }
         }
+
+        public SSF_USUARIO ValidaUsuario(String user, String pass)
+        {
+            String sglosa = string.Empty; 
+            OracleParameter param1 = new OracleParameter("p_username", OracleDbType.Varchar2, 50, user, ParameterDirection.Input);
+            OracleParameter param2 = new OracleParameter("p_contrasena", OracleDbType.Varchar2, 20, pass, ParameterDirection.Input);
+            OracleParameter param3 = new OracleParameter("o_estado", OracleDbType.Int16, ParameterDirection.Output);
+            OracleParameter param4 = new OracleParameter("o_data", OracleDbType.RefCursor, ParameterDirection.Output);
+            OracleParameter param5 = new OracleParameter("o_glosa", OracleDbType.Varchar2, 100, sglosa, ParameterDirection.Output);
+            SSF_USUARIO u = 
+            CommonBC.ModeloSafe.Database.SqlQuery<SSF_USUARIO>(
+            "BEGIN pkg_ssfUsuario.sp_validaUsuario(:p_username, :p_contrasena, :o_glosa, :o_estado, :o_data); end;",
+            param1, param2, param3, param4, param5).SingleOrDefault();
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param3.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param5.Value);
+            u=CommonBC.ModeloSafe.SSF_USUARIO.Find(u.ID);
+
+            if (param5.Value.ToString().ToLower().Contains("xito"))
+            {
+                return u;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+
     }
 }

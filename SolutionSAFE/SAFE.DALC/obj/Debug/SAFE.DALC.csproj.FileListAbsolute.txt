@@ -20,3 +20,4 @@ F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.csproj.CoreCom
 F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.csproj.CopyComplete
 F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.dll
 F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.csprojAssemblyReference.cache

@@ -23,10 +23,10 @@ namespace SAFE.Consola
             }
             SSF_ADJUNTO nAdj;
 
-            System.Console.WriteLine();
-            System.Console.WriteLine("Prueba Find");
+            Console.WriteLine();
+            Console.WriteLine("Prueba Find");
             nAdj = adjuntoBO.Find(1);
-            System.Console.WriteLine("Adjunto ID: {0}, URL: {1}, Médico: {2} {3}", nAdj.ID, nAdj.URL, nAdj.SSF_ATENCIONMEDICA.SSF_MEDICO.NOMBRE, nAdj.SSF_ATENCIONMEDICA.SSF_MEDICO.APELLIDOS);
+            Console.WriteLine("Adjunto ID: {0}, URL: {1}, Médico: {2} {3}", nAdj.ID, nAdj.URL, nAdj.SSF_ATENCIONMEDICA.SSF_MEDICO.NOMBRE, nAdj.SSF_ATENCIONMEDICA.SSF_MEDICO.APELLIDOS);
 
             /*
             Console.WriteLine();

@@ -34,7 +34,7 @@ namespace SAFE.Negocio
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine("Error: {0}", ex.Message);
+                System.Diagnostics.Debug.WriteLine("Error: {0}", ex.Message);
                 return false;
             }
         }
@@ -74,7 +74,7 @@ namespace SAFE.Negocio
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine("Error Remove: {0}", ex.Message);
+                System.Diagnostics.Debug.WriteLine("Error Remove: {0}", ex.Message);
                 return false;
             }
         }
@@ -90,7 +90,7 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.SqlQuery<SSF_ADJUNTO>(
             "BEGIN pkg_ssfAdjunto.sp_getAll(:o_glosa, :o_data); end;",
             param1, param2).ToList();
-            Console.WriteLine("o_glosa: {0}", param1.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param1.Value);
             return resultado.ToList();
 
             //var param0 = new ObjectParameter("o_glosa", typeof(String)); //sglosa
@@ -107,7 +107,7 @@ namespace SAFE.Negocio
                             select p;
                 foreach (var item in query)
                 {
-                    Console.WriteLine(item.ADJUNTO);
+                    System.Diagnostics.Debug.WriteLine(item.ADJUNTO);
 
                 }
                 Console.ReadLine();
@@ -130,9 +130,9 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfAdjunto.sp_add(:p_id_atencionmedica, :p_url, :p_adjunto, :o_glosa, :o_estado, :o_id); end;",
             param1, param2, param3, param4, param5, param6);
-            Console.WriteLine("o_glosa: {0}", param4.Value);
-            Console.WriteLine("o_estado: {0}", param5.Value);
-            Console.WriteLine("o_id: {0}", param6.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param4.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param5.Value);
+            System.Diagnostics.Debug.WriteLine("o_id: {0}", param6.Value);
 
             if (param4.Value.ToString().ToLower().Contains("xito"))
             {
@@ -159,8 +159,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfAdjunto.sp_update(:p_id, :p_id_atencionmedica, :p_url, :p_adjunto, :o_glosa, :o_estado); end;",
             param1, param2, param3, param4, param5, param6);
-            Console.WriteLine("o_glosa: {0}", param5.Value);
-            Console.WriteLine("o_estado: {0}", param6.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param5.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param6.Value);
 
             if (param5.Value.ToString().ToLower().Contains("xito"))
             {
@@ -181,7 +181,7 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfAdjunto.sp_delete(:p_id, :o_glosa); end;",
             param1, param2);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
 
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
@@ -204,8 +204,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfAdjunto.sp_activar(:p_id, :o_glosa, :o_estado); end;",
             param1, param2, param3);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
-            Console.WriteLine("o_estado: {0}", param3.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param3.Value);
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
             {
@@ -227,8 +227,8 @@ namespace SAFE.Negocio
             CommonBC.ModeloSafe.Database.ExecuteSqlCommand(
             "BEGIN pkg_ssfAdjunto.sp_desactivar(:p_id, :o_glosa, :o_estado); end;",
             param1, param2, param3);
-            Console.WriteLine("o_glosa: {0}", param2.Value);
-            Console.WriteLine("o_estado: {0}", param3.Value);
+            System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param2.Value);
+            System.Diagnostics.Debug.WriteLine("o_estado: {0}", param3.Value);
 
             if (param2.Value.ToString().ToLower().Contains("xito"))
             {
