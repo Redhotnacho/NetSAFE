@@ -1,8 +1,21 @@
-﻿$(document).ready(function ()
+﻿function desactivarb(id) {
+    //document.location.href = "/Views/Empresa/index.aspx?desactivar=" + id;
+    window.location.replace("/Views/Empresa/index.aspx?desactivar=" + id);
+    //window.location.href = '/Views/Empresa/index.aspx?desactivar=' + id;
+}
+
+function activarb(id) {
+    document.location.href = "/Views/Empresa/index.aspx?activar=" + id;
+    //window.location.replace("/Views/Empresa/index.aspx?activar=" + id);
+    //window.location.href = '/Views/Empresa/index.aspx?activar=' + id;
+}
+
+/*
+$(document).ready(function ()
 {
     GetAll();
 });
-
+*/
 
 function Desactivar(id)
 {
@@ -14,7 +27,7 @@ function Desactivar(id)
         dataType: "json",
         async: true,
         success: function (response) {
-            if (response.codigo == 1) {
+            if (response.codigo === 1) {
                 window.location.href = '/Empresa';
             }
             else {
@@ -38,7 +51,7 @@ function Activar(id)
         dataType: "json",
         async: true,
         success: function (response) {
-            if (response.codigo == 1) {
+            if (response.codigo === 1) {
                 window.location.href = '/Empresa';
             }
             else {
@@ -75,10 +88,10 @@ function GetAll()
                     "<a href='/Empresa/Editar/" + value.id + "' class='btn-sm btn-primary'>EDITAR</a>" +
                     "</td><td>";
 
-                if (value.estado == 1) {
+                if (value.estado === 1) {
                     lista = lista + "<button id='btnDesactivar' onclick='Desactivar(" + value.id + ")' class='btn-sm btn-danger'>DESACTIVAR</button></div></td></tr>'";
                 }
-                else if (value.estado == 0) {
+                else if (value.estado === 0) {
                     lista = lista + "<button id='btnActivar' onclick='Activar(" + value.id + ")' class='btn-sm btn-success'>ACTIVAR</button></div></td></tr>'";
                 }
                 $('#ListaEmpresas tbody').append(lista);

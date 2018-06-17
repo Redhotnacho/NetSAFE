@@ -7,27 +7,18 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SAFE.Web {
+namespace SAFE.Web.Views.Empresa {
     
     
-    public partial class Home {
+    public partial class index {
         
         /// <summary>
-        /// Control lBienvenido.
+        /// Control lTabla.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lBienvenido;
-        
-        /// <summary>
-        /// Control form1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lTabla;
     }
 }

@@ -235,7 +235,7 @@ namespace SAFE.Negocio
 
             if (param5.Value.ToString().ToLower().Contains("xito"))
             {
-                u=CommonBC.ModeloSafe.SSF_USUARIO.Find(u.ID);
+                u = CommonBC.ModeloSafe.SSF_USUARIO.Find(u.ID);
                 return u;
             }
             else
