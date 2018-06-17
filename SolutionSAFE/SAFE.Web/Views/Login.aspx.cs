@@ -39,7 +39,7 @@ namespace SAFE.Web
             if (usu != null)
             {
                 Session["Usuario"] = usu;
-                Response.Redirect("Home.aspx");
+                Server.Transfer("Home.aspx");
             }
             else
             {

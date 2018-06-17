@@ -3,8 +3,8 @@
     $('#btnLogin').click(function ()
     {
         var obj = new Object();
-        obj.username = $('#login-name').val();
-        obj.contrasena = $('#login-pass').val();
+        obj.username = $('#loginname').val();
+        obj.contrasena = $('#loginpass').val();
 
         if (obj.username == "" || obj.contraseña == "")
         {

@@ -28,14 +28,30 @@ namespace SAFE.Web
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                /* forma de pasar parámetros; otra es con sesiones.
+                string url = String.Format("{0}?ticket={1}", "TicketBoleta.aspx", ddlTickets.SelectedValue);
+                Response.Redirect(url);
+                string idEvento = Request.Params["evento"];*/
+            }
+
+
             if (Session["Usuario"] == null)
             {
-                Response.Redirect("Login.aspx");
+                Server.Transfer("~/Views/Login.aspx");
             }
             else
             {
                 lBienvenido.Text = string.Format("Hola {0} {1}, Bienvenido", Usuario.SSF_PERSONA.NOMBRE, Usuario.SSF_PERSONA.AP_PATERNO);
             }
+
+        }
+
+        protected void Bsalir_Click(object sender, EventArgs e)
+        {
+            Session.Remove("Usuario");
+            Response.Redirect("~/Views/Login.aspx");
         }
     }
 }
