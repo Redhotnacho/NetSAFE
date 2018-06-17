@@ -232,10 +232,10 @@ namespace SAFE.Negocio
             param1, param2, param3, param4, param5).SingleOrDefault();
             System.Diagnostics.Debug.WriteLine("o_estado: {0}", param3.Value);
             System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param5.Value);
-            u=CommonBC.ModeloSafe.SSF_USUARIO.Find(u.ID);
 
             if (param5.Value.ToString().ToLower().Contains("xito"))
             {
+                u=CommonBC.ModeloSafe.SSF_USUARIO.Find(u.ID);
                 return u;
             }
             else
