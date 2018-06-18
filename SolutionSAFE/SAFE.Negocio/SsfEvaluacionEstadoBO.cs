@@ -12,6 +12,10 @@ namespace SAFE.Negocio
         public List<SSF_EVALUACIONESTADO> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_EVALUACIONESTADO;
+            foreach (SSF_EVALUACIONESTADO item in resultado)
+            {
+                CommonBC.ModeloSafe.Entry(item).Reload();
+            }
             return resultado.ToList();
         }
 

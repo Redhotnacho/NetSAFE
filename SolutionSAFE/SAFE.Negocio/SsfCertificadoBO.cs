@@ -12,6 +12,10 @@ namespace SAFE.Negocio
         public List<SSF_CERTIFICADO> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_CERTIFICADO;
+            foreach (SSF_CERTIFICADO item in resultado)
+            {
+                CommonBC.ModeloSafe.Entry(item).Reload();
+            }
             return resultado.ToList();
         }
 

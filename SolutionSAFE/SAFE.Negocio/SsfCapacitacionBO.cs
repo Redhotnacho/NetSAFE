@@ -12,6 +12,10 @@ namespace SAFE.Negocio
         public List<SSF_CAPACITACION> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_CAPACITACION;
+            foreach (SSF_CAPACITACION item in resultado)
+            {
+                CommonBC.ModeloSafe.Entry(item).Reload();
+            }
             return resultado.ToList();
         }
 

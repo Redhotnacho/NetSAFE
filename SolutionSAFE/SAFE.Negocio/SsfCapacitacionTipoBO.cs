@@ -12,6 +12,10 @@ namespace SAFE.Negocio
         public List<SSF_CAPACITACIONTIPO> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_CAPACITACIONTIPO;
+            foreach (SSF_CAPACITACIONTIPO item in resultado)
+            {
+                CommonBC.ModeloSafe.Entry(item).Reload();
+            }
             return resultado.ToList();
         }
 

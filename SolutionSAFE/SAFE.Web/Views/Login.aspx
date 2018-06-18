@@ -28,6 +28,10 @@
                         <asp:Label ID="lloginpass" runat="server" Text="" class="login-field-icon fui-lock" for="loginpass"></asp:Label>
                     </div>
                     <asp:Button ID="btnLogin" runat="server" Text="Ingresar" class="btn btn-primary btn-large btn-block" OnClick="btnLogin_Click" />
+                    
+                    
+
+
                 </div>
             </div>
         </div>

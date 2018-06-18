@@ -12,6 +12,10 @@ namespace SAFE.Negocio
         public List<SSF_ALUMNO> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_ALUMNO;
+            foreach (SSF_ALUMNO item in resultado)
+            {
+                CommonBC.ModeloSafe.Entry(item).Reload();
+            }
             return resultado.ToList();
         }
 
