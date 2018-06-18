@@ -1,0 +1,30 @@
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.Negocio.dll.config
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.Negocio.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.Negocio.pdb
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\EntityFramework.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.DALC.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.DALC.pdb
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.DALC.dll.config
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\bin\Debug\EntityFramework.xml
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.csprojAssemblyReference.cache
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.csproj.CoreCompileInputs.cache
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.csproj.CopyComplete
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.csprojAssemblyReference.cache
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.csproj.CoreCompileInputs.cache
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.Negocio.dll.config
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.Negocio.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.Negocio.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\EntityFramework.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.DALC.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.DALC.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\SAFE.DALC.dll.config
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\bin\Debug\EntityFramework.xml
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Negocio\obj\Debug\SAFE.Negocio.csproj.CopyComplete

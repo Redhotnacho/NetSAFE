@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModeloSafeStoreContainer" CdmEntityContainer="SafeEntities">
+    <EntitySetMapping Name="SSF_ADJUNTO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_ADJUNTO">
+        <MappingFragment StoreEntitySet="SSF_ADJUNTO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_ATENCIONMEDICA" ColumnName="ID_ATENCIONMEDICA" />
+          <ScalarProperty Name="ADJUNTO" ColumnName="ADJUNTO" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_ALUMNO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_ALUMNO">
+        <MappingFragment StoreEntitySet="SSF_ALUMNO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_ALUMNOCAPAEMPRESA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_ALUMNOCAPAEMPRESA">
+        <MappingFragment StoreEntitySet="SSF_ALUMNOCAPAEMPRESA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_ALUMNO" ColumnName="ID_ALUMNO" />
+          <ScalarProperty Name="ID_CAPAEMPRESA" ColumnName="ID_CAPAEMPRESA" />
+          <ScalarProperty Name="ID_CERTIFICADO" ColumnName="ID_CERTIFICADO" />
+          <ScalarProperty Name="APROBACION" ColumnName="APROBACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_ASISTENCIA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_ASISTENCIA">
+        <MappingFragment StoreEntitySet="SSF_ASISTENCIA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_CAPACITACIONDIA" ColumnName="ID_CAPACITACIONDIA" />
+          <ScalarProperty Name="ID_ALUMCAPAEMPRESA" ColumnName="ID_ALUMCAPAEMPRESA" />
+          <ScalarProperty Name="ASISTE" ColumnName="ASISTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_ATENCIONMEDICA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_ATENCIONMEDICA">
+        <MappingFragment StoreEntitySet="SSF_ATENCIONMEDICA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_MEDICO" ColumnName="ID_MEDICO" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="DIAGNOSTICO" ColumnName="DIAGNOSTICO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_CAPACITACION">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_CAPACITACION">
+        <MappingFragment StoreEntitySet="SSF_CAPACITACION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="HORAS" ColumnName="HORAS" />
+          <ScalarProperty Name="ID_CAPACITACIONTIPO" ColumnName="ID_CAPACITACIONTIPO" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="FECHA_TERMINO" ColumnName="FECHA_TERMINO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_CAPACITACIONDIA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_CAPACITACIONDIA">
+        <MappingFragment StoreEntitySet="SSF_CAPACITACIONDIA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="DIA" ColumnName="DIA" />
+          <ScalarProperty Name="ID_CAPAEMPRESA" ColumnName="ID_CAPAEMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_CAPACITACIONEMPRESA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_CAPACITACIONEMPRESA">
+        <MappingFragment StoreEntitySet="SSF_CAPACITACIONEMPRESA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_CAPACITACION" ColumnName="ID_CAPACITACION" />
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+          <ScalarProperty Name="ID_ESTADOCAPACITACION" ColumnName="ID_ESTADOCAPACITACION" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="CANTIDAD_ALUMNOS" ColumnName="CANTIDAD_ALUMNOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_CAPACITACIONTIPO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_CAPACITACIONTIPO">
+        <MappingFragment StoreEntitySet="SSF_CAPACITACIONTIPO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_CENTROMEDICO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_CENTROMEDICO">
+        <MappingFragment StoreEntitySet="SSF_CENTROMEDICO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_CERTIFICADO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_CERTIFICADO">
+        <MappingFragment StoreEntitySet="SSF_CERTIFICADO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="CONTENIDO" ColumnName="CONTENIDO" />
+          <ScalarProperty Name="ID_CAPACITACION" ColumnName="ID_CAPACITACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_EMPRESA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_EMPRESA">
+        <MappingFragment StoreEntitySet="SSF_EMPRESA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_ESTADOCAPAEMPRESA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_ESTADOCAPAEMPRESA">
+        <MappingFragment StoreEntitySet="SSF_ESTADOCAPAEMPRESA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ESTADOCAPAEMP" ColumnName="ESTADOCAPAEMP" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_EVALUACION">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_EVALUACION">
+        <MappingFragment StoreEntitySet="SSF_EVALUACION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+          <ScalarProperty Name="ID_EVALUACIONESTADO" ColumnName="ID_EVALUACIONESTADO" />
+          <ScalarProperty Name="ID_EVALUACIONTIPO" ColumnName="ID_EVALUACIONTIPO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_EVALUACIONESTADO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_EVALUACIONESTADO">
+        <MappingFragment StoreEntitySet="SSF_EVALUACIONESTADO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ESTADOEVAL" ColumnName="ESTADOEVAL" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_EVALUACIONPARAMETRO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_EVALUACIONPARAMETRO">
+        <MappingFragment StoreEntitySet="SSF_EVALUACIONPARAMETRO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_PARAMETRO" ColumnName="ID_PARAMETRO" />
+          <ScalarProperty Name="ID_EVALUACION" ColumnName="ID_EVALUACION" />
+          <ScalarProperty Name="APRUEBA" ColumnName="APRUEBA" />
+          <ScalarProperty Name="OBSERVACION" ColumnName="OBSERVACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_EVALUACIONTIPO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_EVALUACIONTIPO">
+        <MappingFragment StoreEntitySet="SSF_EVALUACIONTIPO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_EXAMEN">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_EXAMEN">
+        <MappingFragment StoreEntitySet="SSF_EXAMEN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_EXAMENTIPO" ColumnName="ID_EXAMENTIPO" />
+          <ScalarProperty Name="EXAMEN" ColumnName="EXAMEN" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_EXAMENTIPO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_EXAMENTIPO">
+        <MappingFragment StoreEntitySet="SSF_EXAMENTIPO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_FICHAMEDICA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_FICHAMEDICA">
+        <MappingFragment StoreEntitySet="SSF_FICHAMEDICA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_EXAMEN" ColumnName="ID_EXAMEN" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_FICHAMEDICAATENCION">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_FICHAMEDICAATENCION">
+        <MappingFragment StoreEntitySet="SSF_FICHAMEDICAATENCION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_ATENCIONMEDICA" ColumnName="ID_ATENCIONMEDICA" />
+          <ScalarProperty Name="ID_FICHAMEDICA" ColumnName="ID_FICHAMEDICA" />
+          <ScalarProperty Name="FECHA_ATENCION" ColumnName="FECHA_ATENCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_MEDICO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_MEDICO">
+        <MappingFragment StoreEntitySet="SSF_MEDICO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+          <ScalarProperty Name="ID_ESPECIALIDAD" ColumnName="ID_ESPECIALIDAD" />
+          <ScalarProperty Name="ID_CENTROMEDICO" ColumnName="ID_CENTROMEDICO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_MEDICOESPECIALIDAD">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_MEDICOESPECIALIDAD">
+        <MappingFragment StoreEntitySet="SSF_MEDICOESPECIALIDAD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ESPECIALIDAD" ColumnName="ESPECIALIDAD" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_MENU">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_MENU">
+        <MappingFragment StoreEntitySet="SSF_MENU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_PARAMETRO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_PARAMETRO">
+        <MappingFragment StoreEntitySet="SSF_PARAMETRO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="PARAMETRO" ColumnName="PARAMETRO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ID_EVALUACIONTIPO" ColumnName="ID_EVALUACIONTIPO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_PERFIL">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_PERFIL">
+        <MappingFragment StoreEntitySet="SSF_PERFIL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="PERFIL" ColumnName="PERFIL" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_PERFILVISTA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_PERFILVISTA">
+        <MappingFragment StoreEntitySet="SSF_PERFILVISTA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+          <ScalarProperty Name="ID_VISTA" ColumnName="ID_VISTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_PERSONA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_PERSONA">
+        <MappingFragment StoreEntitySet="SSF_PERSONA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="AP_PATERNO" ColumnName="AP_PATERNO" />
+          <ScalarProperty Name="AP_MATERNO" ColumnName="AP_MATERNO" />
+          <ScalarProperty Name="CORREO" ColumnName="CORREO" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="FECHA_NAC" ColumnName="FECHA_NAC" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_USUARIO">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_USUARIO">
+        <MappingFragment StoreEntitySet="SSF_USUARIO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="CONTRASENA" ColumnName="CONTRASENA" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSF_VISTA">
+      <EntityTypeMapping TypeName="ModeloSafe.SSF_VISTA">
+        <MappingFragment StoreEntitySet="SSF_VISTA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FECH_CREACION" ColumnName="FECH_CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="ID_MENU" ColumnName="ID_MENU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

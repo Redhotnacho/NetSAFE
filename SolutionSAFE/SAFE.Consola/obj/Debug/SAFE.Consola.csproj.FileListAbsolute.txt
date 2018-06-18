@@ -1,0 +1,36 @@
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Consola.exe.config
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Consola.exe
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Consola.pdb
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.DALC.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Negocio.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.DALC.pdb
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.DALC.dll.config
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Negocio.pdb
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Negocio.dll.config
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.csprojAssemblyReference.cache
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.csproj.CoreCompileInputs.cache
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.csproj.CopyComplete
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.exe
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.pdb
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\EntityFramework.dll
+F:\Soluciones 2018\SolutionSAFE\SAFE.Consola\bin\Debug\EntityFramework.xml
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Consola.exe.config
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Consola.exe
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Consola.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\EntityFramework.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.DALC.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Negocio.dll
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.DALC.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.DALC.dll.config
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Negocio.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\SAFE.Negocio.dll.config
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\bin\Debug\EntityFramework.xml
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.csproj.CoreCompileInputs.cache
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.csproj.CopyComplete
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.exe
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.pdb
+F:\2018\Portafolio\NET\SolutionSAFE\SAFE.Consola\obj\Debug\SAFE.Consola.csprojAssemblyReference.cache
