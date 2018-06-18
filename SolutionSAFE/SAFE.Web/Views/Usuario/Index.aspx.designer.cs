@@ -7,37 +7,46 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SAFE.Web {
+namespace SAFE.Web.Views.Usuario {
     
     
-    public partial class Home {
+    public partial class Index {
         
         /// <summary>
-        /// Control lBienvenido.
+        /// Control EDSUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lBienvenido;
+        protected global::System.Web.UI.WebControls.EntityDataSource EDSUsuario;
         
         /// <summary>
-        /// Control HyperLink1.
+        /// Control EDSPersonas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.EntityDataSource EDSPersonas;
         
         /// <summary>
-        /// Control HyperLink2.
+        /// Control EDSPerfiles.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.EntityDataSource EDSPerfiles;
+        
+        /// <summary>
+        /// Control EDSEmpresas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.EntityDataSource EDSEmpresas;
         
         /// <summary>
         /// Control form1.
@@ -49,12 +58,12 @@ namespace SAFE.Web {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control Bsalir.
+        /// Control GvUsuarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Bsalir;
+        protected global::System.Web.UI.WebControls.GridView GvUsuarios;
     }
 }
