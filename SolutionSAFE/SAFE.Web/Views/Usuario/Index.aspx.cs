@@ -58,6 +58,9 @@ namespace SAFE.Web.Views.Usuario
             GvUsuarios.DataBind();
         }
 
-
+        protected void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("~/Views/Usuario/Agregar.aspx");
+        }
     }
 }

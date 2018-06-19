@@ -105,6 +105,8 @@
     <Content Include="Views\Empresa\index.aspx" />
     <Content Include="Views\Home.aspx" />
     <Content Include="Views\Login.aspx" />
+    <Content Include="Views\Usuario\Agregar.aspx" />
+    <Content Include="Views\Usuario\Editar.aspx" />
     <Content Include="Views\Usuario\Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -135,6 +137,20 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Usuario\Agregar.aspx.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Usuario\Agregar.aspx.designer.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Usuario\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Usuario\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Usuario\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
