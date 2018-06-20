@@ -7,19 +7,28 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SAFE.Web.Views.Usuario {
+namespace SAFE.Web.Views.Evaluaciones {
     
     
     public partial class Index {
         
         /// <summary>
-        /// Control EDSUsuario.
+        /// Control EDSEvaluaciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.EntityDataSource EDSUsuario;
+        protected global::System.Web.UI.WebControls.EntityDataSource EDSEvaluaciones;
+        
+        /// <summary>
+        /// Control lTabla.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lTabla;
         
         /// <summary>
         /// Control form1.
@@ -31,21 +40,12 @@ namespace SAFE.Web.Views.Usuario {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control GvUsuarios.
+        /// Control GvEvaluaciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GvUsuarios;
-        
-        /// <summary>
-        /// Control BtnAgregar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAgregar;
+        protected global::System.Web.UI.WebControls.GridView GvEvaluaciones;
     }
 }

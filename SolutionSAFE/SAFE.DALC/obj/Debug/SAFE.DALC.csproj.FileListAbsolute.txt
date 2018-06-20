@@ -20,3 +20,15 @@ F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.csproj.CoreCom
 F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.csproj.CopyComplete
 F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.dll
 F:\2018\Portafolio\NET\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.pdb
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\bin\Debug\SAFE.DALC.dll.config
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\bin\Debug\SAFE.DALC.dll
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\bin\Debug\SAFE.DALC.pdb
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\bin\Debug\EntityFramework.dll
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\bin\Debug\EntityFramework.xml
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.csprojAssemblyReference.cache
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.csproj.CopyComplete
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.dll
+C:\Users\Samsung\Documents\GitHub\NetSAFE\SolutionSAFE\SAFE.DALC\obj\Debug\SAFE.DALC.pdb

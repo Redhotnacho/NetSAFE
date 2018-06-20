@@ -84,6 +84,7 @@
     <Content Include="Scripts\Empresa\Agregar.js" />
     <Content Include="Scripts\Empresa\Editar.js" />
     <Content Include="Scripts\Empresa\Listar.js" />
+    <Content Include="Scripts\Evaluaciones\Listar.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -103,8 +104,11 @@
     <Content Include="Scripts\Usuario\Listar.js" />
     <Content Include="Scripts\Usuario\Login.js" />
     <Content Include="Views\Empresa\index.aspx" />
+    <Content Include="Views\Evaluaciones\Index.aspx" />
     <Content Include="Views\Home.aspx" />
     <Content Include="Views\Login.aspx" />
+    <Content Include="Views\Usuario\Agregar.aspx" />
+    <Content Include="Views\Usuario\Editar.aspx" />
     <Content Include="Views\Usuario\Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -115,6 +119,13 @@
     </Compile>
     <Compile Include="Views\Empresa\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Evaluaciones\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Evaluaciones\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -135,6 +146,20 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Usuario\Agregar.aspx.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Usuario\Agregar.aspx.designer.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Usuario\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Usuario\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Usuario\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
