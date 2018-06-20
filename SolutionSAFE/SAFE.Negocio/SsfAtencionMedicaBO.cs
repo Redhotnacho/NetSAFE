@@ -12,6 +12,10 @@ namespace SAFE.Negocio
         public List<SSF_ATENCIONMEDICA> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_ATENCIONMEDICA;
+            foreach (SSF_ATENCIONMEDICA item in resultado)
+            {
+                CommonBC.ModeloSafe.Entry(item).Reload();
+            }
             return resultado.ToList();
         }
 

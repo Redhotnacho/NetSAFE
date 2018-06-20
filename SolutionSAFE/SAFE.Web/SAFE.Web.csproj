@@ -210,7 +210,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\jquery.dataTables.min.css" />
     <Content Include="Content\Login.css" />
-    <Content Include="Content\StyleSheet1.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="menu.Master" />
@@ -314,7 +313,13 @@
     <Content Include="Views\Empresa\index.aspx" />
     <Content Include="Views\Home.aspx" />
     <Content Include="Views\Login.aspx" />
+<<<<<<< HEAD
     <Content Include="Views\WebForm1.aspx" />
+=======
+    <Content Include="Views\Usuario\Agregar.aspx" />
+    <Content Include="Views\Usuario\Editar.aspx" />
+    <Content Include="Views\Usuario\Index.aspx" />
+>>>>>>> ae9fbc96f4e51d5c207e47040e91cad1be515ee6
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -352,12 +357,35 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Views\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+=======
+    <Compile Include="Views\Usuario\Agregar.aspx.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Usuario\Agregar.aspx.designer.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Usuario\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Usuario\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Usuario\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Usuario\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+>>>>>>> ae9fbc96f4e51d5c207e47040e91cad1be515ee6
     </Compile>
   </ItemGroup>
   <ItemGroup>

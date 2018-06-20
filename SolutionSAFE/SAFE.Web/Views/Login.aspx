@@ -31,6 +31,7 @@
                     <div class="text-right">
                         <img src="../adminto/images/SAFE.png"/>
                     </div>
+<<<<<<< HEAD
                 </div>                
                 <div class="panel-body">
                     <form id="form1" runat="server">
@@ -57,6 +58,13 @@
                             </div>
                         </div>
                     </form>
+=======
+                    <asp:Button ID="btnLogin" runat="server" Text="Ingresar" class="btn btn-primary btn-large btn-block" OnClick="btnLogin_Click" />
+                    
+                    
+
+
+>>>>>>> ae9fbc96f4e51d5c207e47040e91cad1be515ee6
                 </div>
             </div>  
         </div>

@@ -1,13 +1,26 @@
 ﻿function desactivarb(id) {
-    //document.location.href = "/Views/Empresa/index.aspx?desactivar=" + id;
     window.location.replace("/Views/Empresa/index.aspx?desactivar=" + id);
-    //window.location.href = '/Views/Empresa/index.aspx?desactivar=' + id;
 }
 
 function activarb(id) {
+    
     document.location.href = "/Views/Empresa/index.aspx?activar=" + id;
-    //window.location.replace("/Views/Empresa/index.aspx?activar=" + id);
     //window.location.href = '/Views/Empresa/index.aspx?activar=' + id;
+    /*
+     $.ajax({
+        url: "/Views/Empresa/index.aspx?activar=" + id,
+        type: "GET",
+        contentType: "aplication/json; charset=utf-8",
+        dataType: "json",
+        async: true,
+        success: function (response) {
+            document.location.href = "/Views/Empresa/index.aspx?activar=" + id;
+        },
+        error: function () {
+            alert("Do!");
+        }
+    });
+     */
 }
 
 /*

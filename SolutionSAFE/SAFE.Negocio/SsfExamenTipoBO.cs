@@ -12,6 +12,10 @@ namespace SAFE.Negocio
         public List<SSF_EXAMENTIPO> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_EXAMENTIPO;
+            foreach (SSF_EXAMENTIPO item in resultado)
+            {
+                CommonBC.ModeloSafe.Entry(item).Reload();
+            }
             return resultado.ToList();
         }
 

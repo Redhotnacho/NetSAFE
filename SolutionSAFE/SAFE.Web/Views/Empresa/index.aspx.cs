@@ -30,7 +30,6 @@ namespace SAFE.Web.Views.Empresa
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
             if (!IsPostBack)
             {
                 ComprobarSesion();
@@ -78,7 +77,7 @@ namespace SAFE.Web.Views.Empresa
                 string idEvento = Request.Params["evento"];*/
             foreach (SSF_EMPRESA e in ebo.GetAll())
             {
-                sb.AppendFormat("<tr><td>{0}", e.ID);
+                sb.AppendFormat("<tr><td>{0}", e.ID); //<form id='form{0}' runat='server' method='get'>
                 sb.AppendFormat("</td><td>{0}", e.NOMBRE);
                 sb.AppendFormat("</td><td>{0}", e.TELEFONO);
                 sb.AppendFormat("</td><td>{0}", e.DIRECCION);
@@ -87,14 +86,57 @@ namespace SAFE.Web.Views.Empresa
                 sb.AppendFormat("</td><td>");
                 if (e.ESTADO == 1)
                 {
-                    sb.AppendFormat("<button id='btnDesactivar' onclick='desactivarb({0})' class='btn-sm btn-success'>ACTIVO</button></div></td></tr>'", e.ID);
+                    sb.AppendFormat("<button id='btnDesactivar' onclick='desactivarb({0})' class='btn-sm btn-success'>ACTIVO</button>", e.ID);
+                    //sb.AppendFormat("<input id='HdnDesactivar' type='hidden' value='{0}' />", e.ID);
+                    //sb.AppendFormat("<input id='BtnSubmit' runat='server' PostBackUrl='~/Views/Empresa/index2.aspx?olaoaola=1' type='submit' class='btn-sm btn-success' value='Submit form'/>");
+                    sb.AppendFormat("</td></tr>"); //</form>
+
                 }
                 else if (e.ESTADO == 0)
                 {
-                    sb.AppendFormat("<button id='btnActivar' onclick='activarb({0})' class='btn-sm btn-danger'>DESACTIVADO</button></div></td></tr>'", e.ID);
+                    sb.AppendFormat("<button id='btnActivar' onclick='activarb({0})' class='btn-sm btn-danger'>DESACTIVADO</button>", e.ID);
+                    //sb.AppendFormat("<input id='HdnAactivar' type='hidden' value='{0}' />", e.ID);
+                    //sb.AppendFormat("<input id='BtnSubmit' runat='server' PostBackUrl='~/Views/Empresa/index2.aspx?olaoaola=1' type='submit' class='btn-sm btn-danger' value='Submit form'/>");
+                     //<asp:HiddenField ID="HiddenField1" runat="server" />
+                    //<asp:Button ID="Button1" runat="server" Text="Button" />
+                    sb.AppendFormat("</td></tr>"); //</form>
                 }
             }
             lTabla.Text = sb.ToString();
         }
+
+        protected void LbActivacion_Click(object sender, EventArgs e)
+        {
+            int idempresa = int.Parse((sender as LinkButton).CommandArgument);
+            SsfEmpresaBO ebo = new SsfEmpresaBO();
+            if (ebo.Find(idempresa).ESTADO == 1)
+            {
+                ebo.DesactivarSP(idempresa);
+            }
+            else
+            {
+                ebo.ActivarSP(idempresa);
+            }
+            RefreshModel();
+            //Server.Transfer("~/Views/Empresa/index.aspx");
+        }
+
+        private void RefreshModel()
+        {
+            var refresh = new SsfEmpresaBO().GetAll();
+            GvEmpresas.DataBind();
+        }
+
+        protected void GvEmpresas_RowCreated(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.Header)
+            {
+                e.Row.Cells[7].Visible = false;
+                e.Row.Cells[6].Attributes.Add("colspan", "2");
+            }
+        }
+
+        
+
     }
 }

@@ -7,28 +7,19 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SAFE.Web.Views.Empresa {
+namespace SAFE.Web.Views.Usuario {
     
     
-    public partial class index {
+    public partial class Index {
         
         /// <summary>
-        /// Control EDSEmpresas.
+        /// Control EDSUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.EntityDataSource EDSEmpresas;
-        
-        /// <summary>
-        /// Control lTabla.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lTabla;
+        protected global::System.Web.UI.WebControls.EntityDataSource EDSUsuario;
         
         /// <summary>
         /// Control form1.
@@ -40,12 +31,21 @@ namespace SAFE.Web.Views.Empresa {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control GvEmpresas.
+        /// Control GvUsuarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GvEmpresas;
+        protected global::System.Web.UI.WebControls.GridView GvUsuarios;
+        
+        /// <summary>
+        /// Control BtnAgregar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnAgregar;
     }
 }
