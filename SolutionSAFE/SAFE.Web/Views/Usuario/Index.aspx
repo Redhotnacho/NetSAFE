@@ -20,7 +20,7 @@
                 <asp:GridView ID="GvUsuarios" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="EDSUsuario" CssClass="table table-bordered" OnRowCreated="GvUsuarios_RowCreated" PageSize="6">
                     <Columns>
                         <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID" Visible="False" />
-                        <asp:BoundField DataField="FECH_CREACION" HeaderText="FECH_CREACION" SortExpression="FECH_CREACION" ReadOnly="true"/>
+                        <asp:BoundField DataField="FECH_CREACION" HeaderText="FECH_CREACION" SortExpression="FECH_CREACION" ReadOnly="true" DataFormatString="{0:dd/MM/yy}" />
                         <asp:BoundField DataField="ESTADO" HeaderText="ESTADO" SortExpression="ESTADO" Visible="False" />
                         <asp:BoundField DataField="USERNAME" HeaderText="USERNAME" SortExpression="USERNAME" />
                         <asp:BoundField DataField="CONTRASENA" HeaderText="CONTRASENA" SortExpression="CONTRASENA" />
