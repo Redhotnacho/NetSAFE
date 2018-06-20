@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SAFE.Web</RootNamespace>
     <AssemblyName>SAFE.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +51,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
     <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -57,16 +59,14 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -74,6 +74,138 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminto\css\bootstrap-theme.css" />
+    <Content Include="adminto\css\bootstrap-theme.min.css" />
+    <Content Include="adminto\css\bootstrap.css" />
+    <Content Include="adminto\css\bootstrap.min.css" />
+    <Content Include="adminto\css\components.css" />
+    <Content Include="adminto\css\core.css" />
+    <Content Include="adminto\css\icons.css" />
+    <Content Include="adminto\css\menu.css" />
+    <Content Include="adminto\css\pages.css" />
+    <Content Include="adminto\css\responsive.css" />
+    <Content Include="adminto\css\variables.css" />
+    <Content Include="adminto\images\agsquare.png" />
+    <Content Include="adminto\images\attached-files\img-1.jpg" />
+    <Content Include="adminto\images\attached-files\img-2.jpg" />
+    <Content Include="adminto\images\attached-files\img-3.png" />
+    <Content Include="adminto\images\big\bg.jpg" />
+    <Content Include="adminto\images\big\bg1.jpg" />
+    <Content Include="adminto\images\big\img1.jpg" />
+    <Content Include="adminto\images\big\img2.jpg" />
+    <Content Include="adminto\images\big\img3.jpg" />
+    <Content Include="adminto\images\big\img4.jpg" />
+    <Content Include="adminto\images\big\img5.jpg" />
+    <Content Include="adminto\images\brand\coco-cola.jpg" />
+    <Content Include="adminto\images\brand\coder.jpg" />
+    <Content Include="adminto\images\brand\dribbble-1.jpg" />
+    <Content Include="adminto\images\brand\envato.jpg" />
+    <Content Include="adminto\images\brand\wrap.jpg" />
+    <Content Include="adminto\images\crossword.png" />
+    <Content Include="adminto\images\email\1.png" />
+    <Content Include="adminto\images\email\2.png" />
+    <Content Include="adminto\images\email\3.png" />
+    <Content Include="adminto\images\favicon.ico" />
+    <Content Include="adminto\images\foggy_birds.png" />
+    <Content Include="adminto\images\fondoSafe.jpg" />
+    <Content Include="adminto\images\gallery\1.jpg" />
+    <Content Include="adminto\images\gallery\10.jpg" />
+    <Content Include="adminto\images\gallery\11.jpg" />
+    <Content Include="adminto\images\gallery\12.jpg" />
+    <Content Include="adminto\images\gallery\2.jpg" />
+    <Content Include="adminto\images\gallery\3.jpg" />
+    <Content Include="adminto\images\gallery\4.jpg" />
+    <Content Include="adminto\images\gallery\5.jpg" />
+    <Content Include="adminto\images\gallery\6.jpg" />
+    <Content Include="adminto\images\gallery\7.jpg" />
+    <Content Include="adminto\images\gallery\8.jpg" />
+    <Content Include="adminto\images\gallery\9.jpg" />
+    <Content Include="adminto\images\geometry.png" />
+    <Content Include="adminto\images\geometry2.png" />
+    <Content Include="adminto\images\headline.png" />
+    <Content Include="adminto\images\mail_confirm.png" />
+    <Content Include="adminto\images\multiple-arrow.png" />
+    <Content Include="adminto\images\preloader.gif" />
+    <Content Include="adminto\images\products\big\1.jpg" />
+    <Content Include="adminto\images\products\big\2.jpg" />
+    <Content Include="adminto\images\products\big\3.jpg" />
+    <Content Include="adminto\images\products\big\4.jpg" />
+    <Content Include="adminto\images\products\big\5.jpg" />
+    <Content Include="adminto\images\products\big\6.jpg" />
+    <Content Include="adminto\images\products\big\7.jpg" />
+    <Content Include="adminto\images\products\big\8.jpg" />
+    <Content Include="adminto\images\products\imac.jpg" />
+    <Content Include="adminto\images\products\iphone.jpg" />
+    <Content Include="adminto\images\products\lumia.jpg" />
+    <Content Include="adminto\images\products\macbook.jpg" />
+    <Content Include="adminto\images\products\samsung.jpg" />
+    <Content Include="adminto\images\profile.jpg" />
+    <Content Include="adminto\images\SAFE.png" />
+    <Content Include="adminto\images\small\img1.jpg" />
+    <Content Include="adminto\images\small\img2.jpg" />
+    <Content Include="adminto\images\small\img3.jpg" />
+    <Content Include="adminto\images\small\img4.jpg" />
+    <Content Include="adminto\images\stardust.png" />
+    <Content Include="adminto\images\users\avatar-1.jpg" />
+    <Content Include="adminto\images\users\avatar-10.jpg" />
+    <Content Include="adminto\images\users\avatar-2.jpg" />
+    <Content Include="adminto\images\users\avatar-3.jpg" />
+    <Content Include="adminto\images\users\avatar-4.jpg" />
+    <Content Include="adminto\images\users\avatar-5.jpg" />
+    <Content Include="adminto\images\users\avatar-6.jpg" />
+    <Content Include="adminto\images\users\avatar-7.jpg" />
+    <Content Include="adminto\images\users\avatar-8.jpg" />
+    <Content Include="adminto\images\users\avatar-9.jpg" />
+    <Content Include="adminto\images\user_img.jpg" />
+    <Content Include="adminto\js\bootstrap.js" />
+    <Content Include="adminto\js\bootstrap.min.js" />
+    <Content Include="adminto\js\detect.js" />
+    <Content Include="adminto\js\fastclick.js" />
+    <Content Include="adminto\js\jquery.app.js" />
+    <Content Include="adminto\js\jquery.blockUI.js" />
+    <Content Include="adminto\js\jquery.core.js" />
+    <Content Include="adminto\js\jquery.min.js" />
+    <Content Include="adminto\js\jquery.nicescroll.js" />
+    <Content Include="adminto\js\jquery.scrollTo.min.js" />
+    <Content Include="adminto\js\jquery.slimscroll.js" />
+    <Content Include="adminto\js\modernizr.min.js" />
+    <Content Include="adminto\js\npm.js" />
+    <Content Include="adminto\js\pace.min.js" />
+    <Content Include="adminto\js\waves.js" />
+    <Content Include="adminto\js\wow.min.js" />
+    <Content Include="adminto\less\icons\css\material-design-iconic-font.css" />
+    <Content Include="adminto\less\icons\css\themify-icons.css" />
+    <Content Include="adminto\less\icons\font-awesome\css\font-awesome.css" />
+    <Content Include="adminto\less\icons\font-awesome\css\font-awesome.min.css" />
+    <Content Include="adminto\less\icons\font-awesome\css\mixins.css" />
+    <Content Include="adminto\less\icons\font-awesome\css\variables.css" />
+    <Content Include="adminto\less\icons\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="adminto\less\icons\material-design-iconic-font\css\material-design-iconic-font.css" />
+    <Content Include="adminto\less\icons\material-design-iconic-font\css\material-design-iconic-font.min.css" />
+    <Content Include="adminto\less\icons\themify-icons\ie7\ie7.css" />
+    <Content Include="adminto\less\icons\themify-icons\ie7\ie7.js" />
+    <Content Include="adminto\less\icons\themify-icons\themify-icons.css" />
+    <Content Include="adminto\pages\datatables.editable.init.js" />
+    <Content Include="adminto\pages\datatables.init.js" />
+    <Content Include="adminto\pages\jquery.chartist.init.js" />
+    <Content Include="adminto\pages\jquery.chartjs.init.js" />
+    <Content Include="adminto\pages\jquery.dashboard.js" />
+    <Content Include="adminto\pages\jquery.flot.init.js" />
+    <Content Include="adminto\pages\jquery.fullcalendar.js" />
+    <Content Include="adminto\pages\jquery.gmaps.js" />
+    <Content Include="adminto\pages\jquery.inbox.js" />
+    <Content Include="adminto\pages\jquery.morris.init.js" />
+    <Content Include="adminto\pages\jquery.other-charts.js" />
+    <Content Include="adminto\pages\jquery.peity.init.js" />
+    <Content Include="adminto\pages\jquery.sweet-alert.init.js" />
+    <Content Include="adminto\pages\jquery.tree.js" />
+    <Content Include="adminto\pages\jquery.ui-sliders.js" />
+    <Content Include="adminto\pages\jquery.xeditable.js" />
+    <Content Include="adminto\pages\jvectormap.init.js" />
+    <Content Include="adminto\pugins\jquery-knob\excanvas.js" />
+    <Content Include="adminto\pugins\jquery-knob\jquery.knob.js" />
+    <Content Include="adminto\pugins\switchery\switchery.min.css" />
+    <Content Include="adminto\pugins\switchery\switchery.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\jquery.dataTables.min.css" />
@@ -81,6 +213,82 @@
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="menu.Master" />
+    <Content Include="adminto\css\bootstrap-theme.css.map" />
+    <Content Include="adminto\css\bootstrap-theme.min.css.map" />
+    <Content Include="adminto\css\bootstrap.css.map" />
+    <Content Include="adminto\css\bootstrap.min.css.map" />
+    <Content Include="adminto\fonts\fontawesome-webfont.eot" />
+    <Content Include="adminto\fonts\fontawesome-webfont.svg" />
+    <Content Include="adminto\fonts\fontawesome-webfont.ttf" />
+    <Content Include="adminto\fonts\fontawesome-webfont.woff" />
+    <Content Include="adminto\fonts\fontawesome-webfont.woff2" />
+    <Content Include="adminto\fonts\FontAwesome.otf" />
+    <Content Include="adminto\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="adminto\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="adminto\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="adminto\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="adminto\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="adminto\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="adminto\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="adminto\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="adminto\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="adminto\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="adminto\fonts\themify.eot" />
+    <Content Include="adminto\fonts\themify.svg" />
+    <Content Include="adminto\fonts\themify.ttf" />
+    <Content Include="adminto\fonts\themify.woff" />
+    <Content Include="adminto\less\components.less" />
+    <Content Include="adminto\less\core.less" />
+    <Content Include="adminto\less\elements.less" />
+    <Content Include="adminto\less\icons.less" />
+    <Content Include="adminto\less\icons\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="adminto\less\icons\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="adminto\less\icons\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="adminto\less\icons\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="adminto\less\icons\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="adminto\less\icons\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="adminto\less\icons\font-awesome\less\animated.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\bordered-pulled.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\core.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\fixed-width.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\font-awesome.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\icons.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\larger.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\list.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\mixins.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\path.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\rotated-flipped.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\stacked.less" />
+    <Content Include="adminto\less\icons\font-awesome\less\variables.less" />
+    <Content Include="adminto\less\icons\font-awesome\scss\font-awesome.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_animated.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_core.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_icons.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_larger.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_list.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_mixins.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_path.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_stacked.scss" />
+    <Content Include="adminto\less\icons\font-awesome\scss\_variables.scss" />
+    <Content Include="adminto\less\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="adminto\less\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="adminto\less\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="adminto\less\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="adminto\less\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="adminto\less\icons\material-design-iconic-font\material-design-iconic-font.less" />
+    <Content Include="adminto\less\icons\themify-icons\fonts\themify.eot" />
+    <Content Include="adminto\less\icons\themify-icons\fonts\themify.svg" />
+    <Content Include="adminto\less\icons\themify-icons\fonts\themify.ttf" />
+    <Content Include="adminto\less\icons\themify-icons\fonts\themify.woff" />
+    <Content Include="adminto\less\icons\themify-icons\themify-icons.less" />
+    <Content Include="adminto\less\menu.less" />
+    <Content Include="adminto\less\pages.less" />
+    <Content Include="adminto\less\responsive.less" />
+    <Content Include="adminto\less\variables.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Empresa\Agregar.js" />
     <Content Include="Scripts\Empresa\Editar.js" />
@@ -106,9 +314,17 @@
     <Content Include="Views\Empresa\index.aspx" />
     <Content Include="Views\Home.aspx" />
     <Content Include="Views\Login.aspx" />
+    <Content Include="Views\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="menu.Master.cs">
+      <DependentUpon>menu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.Master.designer.cs">
+      <DependentUpon>menu.Master</DependentUpon>
+    </Compile>
     <Compile Include="Views\Empresa\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,6 +351,13 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
