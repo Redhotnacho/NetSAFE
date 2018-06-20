@@ -37,7 +37,7 @@
         <asp:GridView ID="GvEmpresas" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="EDSEmpresas" AllowPaging="True" AllowSorting="True" CssClass="table table-bordered" OnRowCreated="GvEmpresas_RowCreated" PageSize="5">
             <Columns>
                 <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID" />
-                <asp:BoundField DataField="FECH_CREACION" HeaderText="FECH_CREACION" SortExpression="FECH_CREACION" ApplyFormatInEditMode="True" ReadOnly="True" />
+                <asp:BoundField DataField="FECH_CREACION" HeaderText="FECH_CREACION" SortExpression="FECH_CREACION" ApplyFormatInEditMode="True" ReadOnly="True" DataFormatString="{0:dd/MM/yy}" />
                 <asp:BoundField DataField="ESTADO" HeaderText="ESTADO" SortExpression="ESTADO" />
                 <asp:BoundField DataField="NOMBRE" HeaderText="NOMBRE" SortExpression="NOMBRE" />
                 <asp:BoundField DataField="TELEFONO" HeaderText="TELEFONO" SortExpression="TELEFONO" />

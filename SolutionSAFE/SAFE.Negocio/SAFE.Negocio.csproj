@@ -86,6 +86,7 @@
     <Compile Include="SsfPersonaBO.cs" />
     <Compile Include="SsfUsuarioBO.cs" />
     <Compile Include="SsfVistaBO.cs" />
+    <Compile Include="Utilidad.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SAFE.DALC\SAFE.DALC.csproj">

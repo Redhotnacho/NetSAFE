@@ -105,6 +105,9 @@
     <Content Include="Views\Empresa\index.aspx" />
     <Content Include="Views\Home.aspx" />
     <Content Include="Views\Login.aspx" />
+    <Content Include="Views\Persona\Agregar.aspx" />
+    <Content Include="Views\Persona\Editar.aspx" />
+    <Content Include="Views\Persona\Index.aspx" />
     <Content Include="Views\Usuario\Agregar.aspx" />
     <Content Include="Views\Usuario\Editar.aspx" />
     <Content Include="Views\Usuario\Index.aspx" />
@@ -137,6 +140,27 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Persona\Agregar.aspx.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Persona\Agregar.aspx.designer.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Persona\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Persona\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Persona\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Persona\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Usuario\Agregar.aspx.cs">
       <DependentUpon>Agregar.aspx</DependentUpon>
@@ -185,7 +209,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Perfil\" />
-    <Folder Include="Views\Persona\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

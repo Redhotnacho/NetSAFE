@@ -278,7 +278,7 @@ namespace SAFE.Web.Views.Usuario
         protected void BtnGuardar_Click(object sender, EventArgs e)
         {
             LimpiaMensajes();
-            SSF_USUARIO u = new SsfUsuarioBO().Find(int.Parse(HdnID.Value));
+            
 
             if (DdlPersona.Enabled == false || DdlPersona.Items.Count == 0)
             {
@@ -294,6 +294,7 @@ namespace SAFE.Web.Views.Usuario
             }
             else
             {
+                SSF_USUARIO u = new SsfUsuarioBO().Find(int.Parse(HdnID.Value));
                 u.ID_PERSONA = Decimal.Parse(DdlPersona.SelectedValue);
                 u.ID_PERFIL = Decimal.Parse(DdlPerfil.SelectedValue);
                 u.ID_EMPRESA = Decimal.Parse(DdlEmpresa.SelectedValue);
