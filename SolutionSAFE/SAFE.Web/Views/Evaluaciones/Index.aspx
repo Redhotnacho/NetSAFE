@@ -16,7 +16,7 @@
     <asp:EntityDataSource ID="EDSEvaluaciones" runat="server" ConnectionString="name=SafeEntities" DefaultContainerName="SafeEntities" EnableDelete="True" EnableFlattening="False" EnableInsert="True" EnableUpdate="True" EntitySetName="SSF_EVALUACION" EntityTypeFilter="SSF_EVALUACION"></asp:EntityDataSource>
     <section class="row">
         <div class="col-md-10 offset-1">
-            <h1>EMPRESAS</h1>
+            <h1>EVALUACIONES</h1>
             <table id="ListaEvaluaciones" class="table table-bordered">
                 <thead style="text-align: center">
                     <tr>
