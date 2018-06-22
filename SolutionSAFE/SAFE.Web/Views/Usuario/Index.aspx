@@ -17,10 +17,9 @@
         <div class="col-md-10 offset-1">
             <h1>USUARIOS</h1>
             <form id="form1" runat="server">
-                <asp:GridView ID="GvUsuarios" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="EDSUsuario" CssClass="table table-bordered" OnRowCreated="GvUsuarios_RowCreated" PageSize="6">
+                <asp:GridView ID="GvUsuarios" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="EDSUsuario" CssClass="table table-bordered" OnRowCreated="GvUsuarios_RowCreated" PageSize="8">
                     <Columns>
                         <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID" Visible="False" />
-                        <asp:BoundField DataField="FECH_CREACION" HeaderText="FECH_CREACION" SortExpression="FECH_CREACION" ReadOnly="true" DataFormatString="{0:dd/MM/yy}" />
                         <asp:BoundField DataField="ESTADO" HeaderText="ESTADO" SortExpression="ESTADO" Visible="False" />
                         <asp:BoundField DataField="USERNAME" HeaderText="USERNAME" SortExpression="USERNAME" />
                         <asp:BoundField DataField="CONTRASENA" HeaderText="CONTRASENA" SortExpression="CONTRASENA" />
@@ -39,6 +38,7 @@
                                 <asp:Label ID="Label3" runat="server" Text='<%# String.Format("{0}",  Find(Eval("ID").ToString()).SSF_EMPRESA.NOMBRE) %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
+                        <asp:BoundField DataField="FECH_CREACION" HeaderText="CREACIÓN" SortExpression="FECH_CREACION" ReadOnly="true" DataFormatString="{0:dd/MM/yy}" />
                         <asp:TemplateField HeaderText="CONTROLES">
                             <ItemTemplate>
                                 <a href='<%#String.Format("{0}?editar={1}", "/Views/Usuario/Editar.aspx", Eval("ID")) %>' class='btn-sm btn-primary'>EDITAR</a>

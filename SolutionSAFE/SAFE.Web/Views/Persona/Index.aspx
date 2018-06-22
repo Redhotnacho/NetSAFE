@@ -20,7 +20,7 @@
         <div class="col-md-10 offset-1">
             <h1>PERSONAS</h1>
             <form id="form2" runat="server">
-                <asp:GridView ID="GvPersonas" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="EDSPersona" CssClass="table table-bordered" OnRowCreated="GvPersonas_RowCreated" PageSize="6" DataKeyNames="ID">
+                <asp:GridView ID="GvPersonas" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="EDSPersona" CssClass="table table-bordered" OnRowCreated="GvPersonas_RowCreated" PageSize="8" DataKeyNames="ID">
                     <Columns>
                         <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID" Visible="False"></asp:BoundField>
                         <asp:TemplateField HeaderText="RUT" SortExpression="RUT">
@@ -28,11 +28,16 @@
                                 <asp:Label runat="server" Text='<%# Utilidad.FormatRutSalida(Eval("RUT").ToString()) %>' ID="Label1"></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:BoundField DataField="NOMBRE" HeaderText="NOMBRE" SortExpression="NOMBRE"></asp:BoundField>
-                        <asp:BoundField DataField="AP_PATERNO" HeaderText="PATERNO" SortExpression="AP_PATERNO"></asp:BoundField>
-                        <asp:BoundField DataField="AP_MATERNO" HeaderText="MATERNO" SortExpression="AP_MATERNO"></asp:BoundField>
+                        <asp:TemplateField HeaderText="NOMBRE" SortExpression="NOMBRE">
+                            <ItemTemplate>
+                                <asp:Label runat="server" Text='<%# string.Format("{0} {1} {2}", Eval("NOMBRE"), Eval("AP_PATERNO"), Eval("AP_MATERNO")) %>' ID="Label2"></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+
+                        <asp:BoundField DataField="AP_PATERNO" HeaderText="PATERNO" SortExpression="AP_PATERNO" Visible="False"></asp:BoundField>
+                        <asp:BoundField DataField="AP_MATERNO" HeaderText="MATERNO" SortExpression="AP_MATERNO" Visible="False"></asp:BoundField>
                         <asp:BoundField DataField="CORREO" HeaderText="CORREO" SortExpression="CORREO"></asp:BoundField>
-                        <asp:BoundField DataField="TELEFONO" HeaderText="TELEFONO" SortExpression="TELEFONO"></asp:BoundField>
+                        <asp:BoundField DataField="TELEFONO" HeaderText="TELÉFONO" SortExpression="TELEFONO"></asp:BoundField>
                         <asp:BoundField DataField="FECHA_NAC" HeaderText="NACIMIENTO" SortExpression="FECHA_NAC" DataFormatString="{0:dd/MM/yy}"></asp:BoundField>
                         <asp:BoundField DataField="FECH_CREACION" HeaderText="CREACIÓN" SortExpression="FECH_CREACION" DataFormatString="{0:dd/MM/yy}"></asp:BoundField>
                         <asp:BoundField DataField="ESTADO" HeaderText="ESTADO" SortExpression="ESTADO" Visible="False"></asp:BoundField>
