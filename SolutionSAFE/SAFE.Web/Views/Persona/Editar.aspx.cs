@@ -70,7 +70,7 @@ namespace SAFE.Web.Views.Persona
             string idPersona = Request.Params["editar"];
             if (idPersona != null)
             {
-                if (!idPersona.Equals(String.Empty))
+                if (!idPersona.Equals(string.Empty))
                 {
                     Session["Persona"] = new SsfPersonaBO().Find(int.Parse(idPersona));
                     SSF_PERSONA p = (SSF_PERSONA)Session["Persona"];
@@ -104,9 +104,9 @@ namespace SAFE.Web.Views.Persona
 
         private void LimpiaMensajes()
         {
-            Lerror.Text = String.Empty;
-            Lexito.Text = String.Empty;
-            LerrorRut.Text = String.Empty;
+            Lerror.Text = string.Empty;
+            Lexito.Text = string.Empty;
+            LerrorRut.Text = string.Empty;
         }
 
         private bool ComprobarFechaNac()
@@ -151,7 +151,7 @@ namespace SAFE.Web.Views.Persona
         {
             LimpiaMensajes();
 
-            if (TbRut.Text.Trim().Equals(String.Empty))
+            if (TbRut.Text.Trim().Equals(string.Empty))
             {
                 Lerror.Text = "RUT de usuario no puede quedar en blanco";
             }
@@ -163,19 +163,19 @@ namespace SAFE.Web.Views.Persona
             {
                 LerrorRut.Text = "RUT ya está registrado";
             }
-            else if (TbNombre.Text.Trim().Equals(String.Empty))
+            else if (TbNombre.Text.Trim().Equals(string.Empty))
             {
                 Lerror.Text = "Nombre no puede quedar en blanco";
             }
-            else if (!TbTelefono.Text.Trim().Equals(String.Empty) && !int.TryParse(TbTelefono.Text.Trim(), out int parseTel))
+            else if (!TbTelefono.Text.Trim().Equals(string.Empty) && !int.TryParse(TbTelefono.Text.Trim(), out int parseTel))
             {
                 Lerror.Text = "Error en número de teléfono";
             }
-            else if (!TbCorreo.Text.Trim().Equals(String.Empty) && !Utilidad.ValidaCorreo(TbCorreo.Text.Trim()))
+            else if (!TbCorreo.Text.Trim().Equals(string.Empty) && !Utilidad.ValidaCorreo(TbCorreo.Text.Trim()))
             {
                 Lerror.Text = "Correo inválido";
             }
-            else if (!TbFechaNac.Text.Trim().Equals(String.Empty) && !ComprobarFechaNac())
+            else if (!TbFechaNac.Text.Trim().Equals(string.Empty) && !ComprobarFechaNac())
             {
                 Lerror.Text = "Fecha inválida";
             }
@@ -186,15 +186,15 @@ namespace SAFE.Web.Views.Persona
                 p.NOMBRE = TbNombre.Text.Trim();
                 p.AP_PATERNO = TbApellido1.Text.Trim();
                 p.AP_MATERNO = TbApellido2.Text.Trim();
-                if (!TbCorreo.Text.Trim().Equals(String.Empty))
+                if (!TbCorreo.Text.Trim().Equals(string.Empty))
                 {
                     p.CORREO = TbCorreo.Text.Trim();
                 }
-                if (!TbTelefono.Text.Trim().Equals(String.Empty))
+                if (!TbTelefono.Text.Trim().Equals(string.Empty))
                 {
                     p.TELEFONO = int.Parse(TbTelefono.Text.Trim());
                 }
-                if (!TbFechaNac.Text.Trim().Equals(String.Empty))
+                if (!TbFechaNac.Text.Trim().Equals(string.Empty))
                 {
                     p.FECHA_NAC = parseFech;
                 }

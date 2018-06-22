@@ -15,6 +15,7 @@
     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Views/Empresa/index.aspx">Empresas index</asp:HyperLink><br />
     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Views/Usuario/Index.aspx">Usuarios index</asp:HyperLink><br />
     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Views/Persona/Index.aspx">Personas index</asp:HyperLink><br />
+    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Views/CapEmpresa/Index.aspx">Capacitación y Empresa index</asp:HyperLink><br />
     
     <form id="form1" runat="server">
         <br />

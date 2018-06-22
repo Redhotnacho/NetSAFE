@@ -47,7 +47,7 @@ namespace SAFE.Web.Views.Usuario
 
         private void ComprobarRut()
         {
-            LerrorIDPers.Text = String.Empty;
+            LerrorIDPers.Text = string.Empty;
             if (uuall == null)
             {
                 uuall = new SsfUsuarioBO().GetAll();
@@ -77,7 +77,7 @@ namespace SAFE.Web.Views.Usuario
             string idUsuario = Request.Params["editar"];
             if (idUsuario != null)
             {
-                if (!idUsuario.Equals(String.Empty))
+                if (!idUsuario.Equals(string.Empty))
                 {
                     u = new SsfUsuarioBO().Find(int.Parse(idUsuario));
                     CargaPersona(u);
@@ -242,8 +242,8 @@ namespace SAFE.Web.Views.Usuario
 
         private void LimpiaMensajes()
         {
-            Lerror.Text = String.Empty;
-            Lexito.Text = String.Empty;
+            Lerror.Text = string.Empty;
+            Lexito.Text = string.Empty;
         }
 
         private void CargaPersonas(List<SSF_PERSONA> pp)
@@ -284,11 +284,11 @@ namespace SAFE.Web.Views.Usuario
             {
                 Lerror.Text = "Debe seleccionar una persona";
             }
-            else if (TbUsername.Text.Trim().Equals(String.Empty))
+            else if (TbUsername.Text.Trim().Equals(string.Empty))
             {
                 Lerror.Text = "Nombre de usuario no puede quedar en blanco";
             }
-            else if (!TbContrasena.Text.Trim().Equals(String.Empty) && !TbContrasena2.Text.Trim().Equals(String.Empty) && !TbContrasena.Text.Trim().Equals(TbContrasena2.Text.Trim()))
+            else if (!TbContrasena.Text.Trim().Equals(string.Empty) && !TbContrasena2.Text.Trim().Equals(string.Empty) && !TbContrasena.Text.Trim().Equals(TbContrasena2.Text.Trim()))
             {
                 Lerror.Text = "Las contraseñas no son iguales";
             }
@@ -299,7 +299,7 @@ namespace SAFE.Web.Views.Usuario
                 u.ID_PERFIL = Decimal.Parse(DdlPerfil.SelectedValue);
                 u.ID_EMPRESA = Decimal.Parse(DdlEmpresa.SelectedValue);
                 u.USERNAME = TbUsername.Text.Trim();
-                if (!(TbContrasena.Text.Equals(String.Empty) && TbContrasena2.Text.Equals(String.Empty)))
+                if (!(TbContrasena.Text.Equals(string.Empty) && TbContrasena2.Text.Equals(string.Empty)))
                 {
                     u.CONTRASENA = TbContrasena.Text.Trim();
                 }
