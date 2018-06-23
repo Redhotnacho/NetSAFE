@@ -12,10 +12,6 @@ namespace SAFE.Negocio
         public List<SSF_MEDICOESPECIALIDAD> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_MEDICOESPECIALIDAD;
-            foreach (SSF_MEDICOESPECIALIDAD item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
             return resultado.ToList();
         }
 

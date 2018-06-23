@@ -11,6 +11,7 @@ namespace SAFE.Web {
     
     
     public partial class Home {
+<<<<<<< HEAD
         
         /// <summary>
         /// Control lBienvenido.
@@ -74,5 +75,7 @@ namespace SAFE.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Bsalir;
+=======
+>>>>>>> Yerko
     }
 }

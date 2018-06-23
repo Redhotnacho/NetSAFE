@@ -41,11 +41,6 @@ namespace SAFE.Web
             {
                 Server.Transfer("~/Views/Login.aspx");
             }
-            else
-            {
-                lBienvenido.Text = string.Format("Hola {0} {1}, Bienvenido", Usuario.SSF_PERSONA.NOMBRE, Usuario.SSF_PERSONA.AP_PATERNO);
-            }
-
         }
 
         protected void Bsalir_Click(object sender, EventArgs e)

@@ -12,10 +12,6 @@ namespace SAFE.Negocio
         public List<SSF_EVALUACIONTIPO> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_EVALUACIONTIPO;
-            foreach (SSF_EVALUACIONTIPO item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
             return resultado.ToList();
         }
 

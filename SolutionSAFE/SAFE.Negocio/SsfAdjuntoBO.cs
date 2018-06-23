@@ -14,11 +14,6 @@ namespace SAFE.Negocio
         public List<SSF_ADJUNTO> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_ADJUNTO;
-            foreach (SSF_ADJUNTO item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
-            resultado = CommonBC.ModeloSafe.SSF_ADJUNTO;
             return resultado.ToList();
         }
 

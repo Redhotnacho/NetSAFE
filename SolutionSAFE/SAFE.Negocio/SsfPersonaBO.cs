@@ -12,10 +12,6 @@ namespace SAFE.Negocio
         public List<SSF_PERSONA> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_PERSONA;
-            foreach (SSF_PERSONA item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
             return resultado.ToList();
         }
 

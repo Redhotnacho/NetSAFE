@@ -11,7 +11,7 @@
     <title></title>
 </head>
 <body>
-    <asp:EntityDataSource ID="EDSEmpresas" runat="server" ConnectionString="name=SafeEntities" DefaultContainerName="SafeEntities" EnableDelete="True" EnableFlattening="False" EnableInsert="True" EnableUpdate="True" EntitySetName="SSF_EMPRESA" EntityTypeFilter="SSF_EMPRESA"></asp:EntityDataSource>
+
     <section class="row">
         <div class="col-md-10 offset-1">
             <h1>EMPRESAS</h1>
@@ -31,6 +31,7 @@
             </table>
         </div>
     </section>
+<<<<<<< HEAD
     <section class="row">
         <div class="col-md-10 offset-1">
             <form id='form1' runat='server' method='post'>
@@ -66,10 +67,9 @@
                 <br />
 
 
+=======
+>>>>>>> Yerko
 
-                </form>
-            </div>
-        </section>
     <script src='<%=ResolveClientUrl("~/Scripts/Empresa/Listar.js") %>' type="text/javascript"></script>
 </body>
 </html>

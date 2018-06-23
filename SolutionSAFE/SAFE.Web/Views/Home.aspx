@@ -1,5 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SAFE.Web.Home" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/menu.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SAFE.Web.Home" %>
 
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -21,8 +22,18 @@
         <br />
         <div>
             <asp:Button ID="Bsalir" runat="server" OnClick="Bsalir_Click" Text="Cerrar sesión" Width="200px" CssClass="btn-sm btn-danger" />
+=======
+>>>>>>> Yerko
 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-color panel-primary">
+            <div class="panel-heading" >
+                <h3 class="panel-title" style="text-align: center; font-size: 25px;">DashBoard</h3>
+            </div>
+            <div class="panel-body">
+                
+            </div>
         </div>
-    </form>
-</body>
-</html>
+    </div>
+</asp:Content>

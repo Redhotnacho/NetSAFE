@@ -12,10 +12,6 @@ namespace SAFE.Negocio
         public List<SSF_ALUMNOCAPAEMPRESA> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_ALUMNOCAPAEMPRESA;
-            foreach (SSF_ALUMNOCAPAEMPRESA item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
             return resultado.ToList();
         }
 

@@ -12,10 +12,6 @@ namespace SAFE.Negocio
         public List<SSF_PERFILVISTA> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_PERFILVISTA;
-            foreach (SSF_PERFILVISTA item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
             return resultado.ToList();
         }
 

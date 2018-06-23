@@ -12,10 +12,6 @@ namespace SAFE.Negocio
         public List<SSF_MENU> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_MENU;
-            foreach (SSF_MENU item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
             return resultado.ToList();
         }
 

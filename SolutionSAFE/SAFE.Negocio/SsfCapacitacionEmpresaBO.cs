@@ -12,10 +12,6 @@ namespace SAFE.Negocio
         public List<SSF_CAPACITACIONEMPRESA> GetAll()
         {
             var resultado = CommonBC.ModeloSafe.SSF_CAPACITACIONEMPRESA;
-            foreach (SSF_CAPACITACIONEMPRESA item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
             return resultado.ToList();
         }
 

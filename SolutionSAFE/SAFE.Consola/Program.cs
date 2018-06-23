@@ -19,7 +19,7 @@ namespace SAFE.Consola
             foreach (SSF_ADJUNTO item in lista)
             {
                 Console.WriteLine("URL: {0}, Fecha creación: {1}, Adjunto: {2}, ID: {3}, Estado: {4}", item.URL,
-                    item.SSF_ATENCIONMEDICA.SSF_MEDICO.NOMBRE, item.ADJUNTO, item.ID, item.ESTADO);
+                    item.FECH_CREACION, item.ADJUNTO, item.ID, item.ESTADO);
             }
             SSF_ADJUNTO nAdj;
 
@@ -72,7 +72,6 @@ namespace SAFE.Consola
             */
 
             // Borrado Lógico
-            /*
             Console.WriteLine();
             Console.WriteLine("Prueba DesactivarSP");
             adjuntoBO.DesactivarSP(1);
@@ -94,7 +93,7 @@ namespace SAFE.Consola
             {
                 Console.WriteLine("URL: {0}, Fecha creación: {1}, Adjunto: {2}, ID: {3}, Estado: {4}", item.URL,
                     item.FECH_CREACION, item.ADJUNTO, item.ID, item.ESTADO);
-            }*/
+            }
             
             Console.WriteLine("Hola Mundo!");
             Console.ReadKey();

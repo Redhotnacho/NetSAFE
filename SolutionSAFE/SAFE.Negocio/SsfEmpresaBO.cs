@@ -16,6 +16,7 @@ namespace SAFE.Negocio
             {
                 CommonBC.ModeloSafe.Entry(item).Reload();
             }
+            resultado = CommonBC.ModeloSafe.SSF_EMPRESA;
             return resultado.ToList();
         }
 
@@ -78,7 +79,6 @@ namespace SAFE.Negocio
         //GetAllSP() las relaciones están vacías!! - Usar método GetAll() instead
         public List<SSF_EMPRESA> GetAllSP()
         {
-            
             String sglosa = string.Empty;
             var param1 = new OracleParameter("o_glosa", OracleDbType.Varchar2, 80, obj: sglosa, direction: ParameterDirection.Output);
             var param2 = new OracleParameter("o_data", OracleDbType.RefCursor, ParameterDirection.Output);
@@ -88,10 +88,6 @@ namespace SAFE.Negocio
             "BEGIN pkg_ssfEmpresa.sp_getAll(:o_glosa, :o_data); end;",
             param1, param2).ToList();
             System.Diagnostics.Debug.WriteLine("o_glosa: {0}", param1.Value);
-            foreach (SSF_EMPRESA item in resultado)
-            {
-                CommonBC.ModeloSafe.Entry(item).Reload();
-            }
             return resultado.ToList();
 
         }
