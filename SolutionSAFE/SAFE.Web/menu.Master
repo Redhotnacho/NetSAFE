@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu.master.cs" Inherits="SAFE.Web.menu" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>SAFE</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="~/adminto/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/adminto/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="~/adminto/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="~/adminto/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="~/adminto/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="~/adminto/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="~/adminto/css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/adminto/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/adminto/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/adminto/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/adminto/js/modernizr.min.js"></script>
+</head>
+<body>
+    <header id="topnav">
+        <div class="topbar-main">
+            <div class="container">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="Home.aspx" class="logo"><span>SA<span>FE</span></span></a>
+                </div>
+                <!-- End Logo container-->
+
+
+                <div class="menu-extras">
+
+                    <ul class="nav navbar-nav navbar-right pull-right">
+                        <li style="color:white;margin-top:7px;">
+                           <span class="navbar-left app-search pull-left hidden-xs"><asp:Label ID="lBienvenido" runat="server" Text="Label"> </asp:Label></span>
+                        </li>
+                        <li class="dropdown user-box">
+                            <a href="#" class="dropdown-toggle waves-effect waves-light profile " data-toggle="dropdown" aria-expanded="true">
+                                <img src="/adminto/images/user_img.jpg" alt="user-img" class="img-circle user-img">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <asp:HyperLink ID="cerrarSession" runat="server" NavigateUrl="/Views/Home.aspx?salir=1" ><i class="ti-user m-r-5"></i> Cerrar Sesión</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="navbar-custom">
+            <div class="container">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <% 
+                        SAFE.Negocio.SsfMenuBO menu = new SAFE.Negocio.SsfMenuBO();
+                        foreach (SAFE.DALC.SSF_MENU temp in menu.GetAll())
+                        {
+                            Label1.Text = string.Format("{0}", temp.NOMBRE);
+                    %>
+                    <ul class="navigation-menu">
+                        <li class="has-submenu">
+                            <a href="#"><i class="zmdi zmdi-collection-text"></i><span> <asp:Label ID="Label1" runat="server" Text="Label"> </asp:Label>  </span> </a>
+                            <ul class="submenu">
+                                <% 
+                                    foreach (SAFE.DALC.SSF_VISTA submenu in temp.SSF_VISTA)
+                                    {
+                                        /*SAFE.DALC.SSF_USUARIO user = (SAFE.DALC.SSF_USUARIO)Session["Usuario"];
+                                        Literal1.Text = string.Format("{0}", (user.SSF_PERSONA.NOMBRE));//*/
+                                        Literal1.Text = string.Format("{0}", submenu.NOMBRE);
+                                %>
+                                    <li><a href="form-elements.html"><asp:Literal ID="Literal1" runat="server"> </asp:Literal></a></li>
+                                <% } %>
+                            </ul>
+                        </li>
+                    </ul>
+                   <% } %>
+                    <!-- End navigation menu  -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">    
+        <div class="content-page">
+            <div class="content">
+                <div class="container">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+                <footer class="footer text-right">
+                    Copyright © 2018 SAFE. Todos los derechos reservados.
+                </footer>
+            </div>                  
+        </div>     
+    </div>    
+    
+    <script>
+        var resizefunc = [];
+    </script>
+
+    <script type="text/javascript" src="/adminto/js/detect.js"></script>
+    <script type="text/javascript" src="/adminto/js/fastclick.js"></script>
+    <script type="text/javascript" src="/adminto/js/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="/adminto/js/waves.js"></script>
+    <script type="text/javascript" src="/adminto/js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="/adminto/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/adminto/plugins/switchery/switchery.min.js"></script>
+    <script type="text/javascript" src="/adminto/plugins/jquery-knob/jquery.knob.js"></script>
+    <script type="text/javascript" src="/adminto/js/jquery.core.js"></script>
+    <script type="text/javascript" src="/adminto/js/jquery.app.js"></script>
+</body>
+</html>
